@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en" class="page">
+    <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Описание" />
+
+    <link rel="icon" href="favicon.ico" />
+    <link rel="icon" href="img/favicon/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="img/favicon/manifest.json" />
+
+    <link
+		rel="preload"
+		href="./fonts/Poppins-Regular.woff2"
+		as="font"
+		type="font/woff2"
+		crossorigin
+	/>
+    <link
+		rel="preload"
+		href="./fonts/Poppins-Medium.woff2"
+		as="font"
+		type="font/woff2"
+		crossorigin
+	/>
+    <link
+		rel="preload"
+		href="./fonts/Poppins-SemiBold.woff2"
+		as="font"
+		type="font/woff2"
+		crossorigin
+	/>
+    <link
+		rel="preload"
+		href="./fonts/Poppins-Bold.woff2"
+		as="font"
+		type="font/woff2"
+		crossorigin
+	/>
+
+    <link
+		rel="stylesheet"
+		href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css?_v=20230422202244"
+	/>
+    <link rel="stylesheet" href="css/app.min.css?_v=20230422202244" />
+
+    <script
+		defer
+		src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"
+	></script>
+    <script defer src="js/app.min.js?_v=20230422202244"></script>
+    <title>Components</title>
+</head>
+
+    <body class="page__body">
+        <div class="site-container">
+            <main class="main">
+                <section class="components">
+                    <div class="container">
+                        <div class="components__container">
+                            <div class="component">
+                                <div class="email-sent-modal">
+    <button
+		class="email-sent-modal__close close-modal btn-reset"
+		aria-label="Закрыть модальное окно"
+	>
+        <img
+			src="img/icons/close-modal-icon.svg"
+			width="14"
+			height="14"
+			loading="lazy"
+			alt="Close"
+		/>
+    </button>
+    <div class="email-sent-modal__content">
+        <div class="email-sent-modal__logo">
+            <img
+				src="img/logo-modal.svg"
+				width="144"
+				height="42"
+				loading="lazy"
+				alt="Logo"
+			/>
+        </div>
+        <div class="email-sent-modal__body">
+            <p class="email-sent-modal__text">
+                We have sent you an email mail@davidsmith4819.com with access to your
+                personal account.
+            </p>
+        </div>
+    </div>
+</div>
+
+                            </div>
+                            <div class="component">
+                                <div class="input-group error">
+    <label class="input-group__label">
+        <span>Password</span>
+        <input
+			class="input-group__input"
+			type="password"
+			placeholder="No password yet"
+		/>
+        <button class="input-group__btn">
+            <img
+				class="input-group__icon input-group__icon--eye active"
+				src="img/icons/eye-gray.svg"
+				alt="Hide password"
+			/>
+            <img
+				class="input-group__icon input-group__icon--eye-slash"
+				src="img/icons/eye-gray-slash.svg"
+				alt="Show password"
+			/>
+        </button>
+    </label>
+    <div class="input-group__error">
+        <p>Username already exists</p>
+        <p>Wrong Username</p>
+    </div>
+</div>
+
+                            </div>
+                            <div class="component">
+                                <div class="payment-failed-modal">
+    <button
+		class="payment-failed-modal__close close-modal btn-reset"
+		aria-label="Закрыть модальное окно"
+	>
+        <img
+			src="img/icons/close-modal-icon.svg"
+			width="14"
+			height="14"
+			loading="lazy"
+			alt="Close"
+		/>
+    </button>
+    <div class="payment-failed-modal__content">
+        <div class="payment-failed-modal__head">
+            <h4 class="payment-failed-modal__head-title">Notification</h4>
+        </div>
+        <div class="payment-failed-modal__body">
+            <h3 class="payment-failed-modal__title">Payment failed</h3>
+            <p class="payment-failed-modal__text">Something went wrong</p>
+            <div class="payment-failed-modal__btns">
+                <button class="payment-failed-modal__btn btn btn--red btn-reset">
+                    Retry
+                </button>
+                <button class="payment-failed-modal__btn btn btn--black btn-reset">
+                    Close
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+                            </div>
+                            <div class="component">
+                                <div class="cookie">
+    <p class="cookie__text">
+        We use cookies to enhance your browsing experience, serve personalized ads
+        or content, and analyze our traffic. By clicking «Accept All», you consent
+        to our use of cookies. Cookie Policy
+    </p>
+    <div class="cookie__btns">
+        <button class="cookie__btn btn btn-reset btn--red">Accept all</button>
+        <button class="cookie__btn btn btn-reset btn--dark">Reject all</button>
+    </div>
+</div>
+
+                            </div>
+                            <div class="component">
+                                <div class="upgrade-modal">
+    <button
+		class="upgrade-modal__close close-modal btn-reset"
+		aria-label="Закрыть модальное окно"
+	>
+        <img
+			src="img/icons/close-modal-icon-gray.svg"
+			width="14"
+			height="14"
+			loading="lazy"
+			alt="Close"
+		/>
+    </button>
+    <div class="upgrade-modal__content">
+        <h3 class="upgrade-modal__title"><span>Hey,</span> upgrade your tariff</h3>
+        <p class="upgrade-modal__text">
+            Your tariff is expired. Wait until next month or upgrade your tariff.
+        </p>
+        <a class="upgrade-modal__btn btn btn--yellow" href="#">Upgrade</a>
+    </div>
+</div>
+
+                            </div>
+                            <div class="component">
+                                <div class="tariff-expired-modal">
+    <div class="tariff-expired-modal__content">
+        <h3 class="tariff-expired-modal__title">Tariff is expired</h3>
+        <p class="tariff-expired-modal__text">Your tariff now</p>
+        <div class="tariff-expired-modal__tariff">Free</div>
+        <a class="tariff-expired-modal__btn btn btn--yellow" href="#"
+			>See tariffs
+        </a>
+    </div>
+</div>
+
+                            </div>
+                            <div class="component">
+                                <div class="tariffs-expired">
+    <p class="tariffs-expired__text">Your tariffs is expired</p>
+    <a class="tariffs-expired__btn btn btn--red" href="#">Upgrade</a>
+</div>
+
+                            </div>
+                            <div class="component">
+                                <div
+	class="limit-modal graph-modal__container"
+	role="dialog"
+	aria-modal="true"
+	data-graph-target="limit-modal"
+>
+    <h3 class="limit-modal__title">Your limit is reached: (</h3>
+    <p class="limit-modal__text">Upgrade your tariff</p>
+    <div class="limit-modal__info">
+        <div class="limit-modal__info-number">0</div>
+        <div class="limit-modal__info-text">image available</div>
+    </div>
+    <a class="limit-modal__link btn btn--yellow" href="#">See tariffs</a>
+</div>
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </body>
+</html>
